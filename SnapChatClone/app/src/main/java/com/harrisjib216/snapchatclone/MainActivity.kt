@@ -12,6 +12,14 @@ https://antonioleiva.com/free-kotlin-android-course/
 algo
 https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940
 
+
+chat
+https://www.youtube.com/watch?v=ihJGxFu2u9Q&list=PL0dzCUj1L5JE-jiBHjxlmXEkQkum_M3R-
+
+insta
+https://www.youtube.com/watch?v=9CjxFd3LgLE&list=PLFzlb57tNKUOrFIcicZ88qmaeHTA_9t_6
+
+
  */
 
 package com.harrisjib216.snapchatclone
