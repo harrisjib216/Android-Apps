@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">A Very Responsive App</string>
+    <string name="box_one">Box One</string>
+    <string name="box_two">Box Two</string>
+    <string name="box_three">Box Three</string>
+    <string name="box_four">Box Four</string>
+    <string name="box_five">Box Five</string>
+
+    <string name="box_red">RED</string>
+    <string name="box_yellow">YELLOW</string>
+    <string name="box_green">GREEN</string>
+    <string name="how_to_play">How to play</string>
+    <string name="text_instructions">Tap the white boxes and the screen</string>
+</resources>

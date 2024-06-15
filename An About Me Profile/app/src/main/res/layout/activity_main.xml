@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <data>
+        <variable
+            name="person"
+            type="com.example.aboutme.Person" />
+    </data>
+
+    <!-- app bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:background="@android:color/holo_green_light" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:color/holo_green_dark"
+            android:fitsSystemWindows="true"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:text="@string/app_name"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+    <!-- person name -->
+    <TextView
+        android:id="@+id/name_label"
+        android:text="@{person.name}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/Text" />
+
+    <!-- star image -->
+    <EditText
+        android:id="@+id/nick_name_edit"
+        style="@style/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nickNameHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <!-- update nickname button -->
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Done"
+        app:cornerRadius="8dp" />
+
+    <!-- star image -->
+    <ImageView
+        android:id="@+id/star_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin"
+        android:contentDescription="@string/gold_star"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <!-- nick name -->
+    <TextView
+        android:id="@+id/nick_name_label"
+        android:text="@{person.nickName}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        style="@style/Text" />
+
+    <!-- scrollable text view -->
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/bio_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/large_padding"
+            android:paddingEnd="@dimen/large_padding"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/lorem_ipsum" />
+    </ScrollView>
+
+</LinearLayout>
